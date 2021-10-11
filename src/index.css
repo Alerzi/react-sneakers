@@ -1,13 +1,194 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: 'Inter', system-ui;
+}
+.wrapper {
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+header {
+}
+.headerLeft {
+}
+.headerLeft-img {
+  margin-right: 15px;
+}
+.headerInfo h3, p {
+  margin: 0;
+}
+.headerLeft-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.headerRight-img {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transform: translateY(3px);
+}
+.headerSpan {
+  margin-left: 15px;
+}
+.content h1 {
+  margin: 0;
+}
+.buttonImg {
+  width: 11px;
+  height: 11px;
+}
+.cardImg {
+  width: 133px;
+  height: 112px;
+}
+.card {
+  border: 1px solid #F8F8F8;
+  padding: 20px;
+  width: 220px;
+  border-radius: 40px;
+  position: relative;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+.card span {
+  font-size: 13px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.card b {
+  font-size: 13px;
+}
+.card h5 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.button {
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+.search-block {
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+.search-block img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transform: translateY(7px);
+}
+.search-block input {
+  padding: 10px;
+  border: 0;
+  font-size: 16px;
+}
+.favorite {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  cursor: pointer;
+}
+.drawer {
+  position: absolute;
+  width: 420px;
+  height: 100%;
+  right: 0;
+  background: #ffffff;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.cartBlock {
+  flex: 1;
+  overflow: auto;
+  margin-bottom: 40px;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.drawer h2 {
+  margin: 0;
+  font-size: 24px;
+}
+.cartItem {
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.cartItem-img {
+  width: 70px;
+  height: 70px;
+}
+.cartItem p {
+  font-size: 14px;
+}
+.cartItem b {
+  font-size: 12px;
+}
+.removeBtn {
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+.removeBtn:hover {
+  opacity: 1;
+}
+.cartTotalBlock li div {
+  height: 1px;
+  flex: 1;
+  transform: translateY(15px);
+  border-bottom: 1px dashed #dfdfdf;
+  margin: 0 10px;
+}
+.cartTotalBlock-btn {
+  width: 100%;
+  height: 55px;
+  background: #9dd558;
+  border-radius: 18px;
+  border: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.cartTotalBlock-btn img {
+  position: absolute;
+  right: 35px;
+  top: 20px;
+  transition: transform 0.2s ease-in-out;
+  width: 30px;
+  height: 15px;
+}
+.cartTotalBlock-btn:hover img {
+  transform: translateX(10px);
 }
